@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harsh Senjaliya</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon icon -->
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/png">
+
+
+    <!-- All CSS file included here -->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .faq .nav {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+
+        .faq .nav-link,
+        .faq .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .faq .nav-link {
+            display: block;
+        }
+
+        .faq .nav-link:focus,
+        .faq .nav-link:hover {
+            text-decoration: none;
+        }
+
+        .faq .nav-link.disabled {
+            color: #6c757d;
+        }
+
+        .faq .nav-tabs {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .faq .nav-tabs .nav-item {
+            margin-bottom: -1px;
+        }
+
+        .faq .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .faq .nav-tabs .nav-link:focus,
+        .faq .nav-tabs .nav-link:hover {
+            border-color: #e9ecef #e9ecef #dee2e6;
+        }
+
+        .faq .nav-tabs .nav-link.disabled {
+            color: #6c757d;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .faq .nav-tabs .nav-item.show .nav-link,
+        .faq .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .faq .nav-tabs .dropdown-menu {
+            margin-top: -1px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .faq .nav-pills .nav-link {
+            border-radius: 0.25rem;
+        }
+
+        .faq .nav-pills .nav-link.active,
+        .faq .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .faq .nav-fill .nav-item {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -moz-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+        .faq .nav-justified .nav-item {
+            -webkit-flex-basis: 0;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -moz-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .tab-content .tab-pane {
+            display: none;
+        }
+
+        .tab-content .active {
+            display: block !important;
+        }
+
+        .faq .navbar {
+            position: relative;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .faq .navbar>.container,
+        .faq .navbar>.container-fluid {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .faq .navbar-brand {
+            display: inline-block;
+            padding-top: 0.40625rem;
+            padding-bottom: 0.40625rem;
+            margin-right: 1rem;
+            font-size: 1.125rem;
+            line-height: inherit;
+        }
+    </style>
+    <style>
+        .faq .nav.nav-underline {
+            border-bottom: 1px solid #eeecf4;
+        }
+
+        .faq .nav.nav-underline a {
+            color: #3f3f3f;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: 0 0;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -moz-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .faq .nav.nav-underline a.nav-item.nav-link.active {
+            color: #3f3f3f;
+            border: none;
+            background-color: transparent;
+            border-bottom: 4px solid #3f3f3f;
+            border-radius: 0;
+            margin-bottom: -2px;
+        }
+
+        .faq .tab-content .card {
+            margin-bottom: 0.75rem;
+            border: 1px solid #eeecf4;
+            border-radius: 0.5rem;
+        }
+
+        .faq .tab-content .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 0.6rem;
+            text-decoration: none;
+        }
+
+        .faq .tab-content .card .card-header .btn-link {
+            font-weight: 700;
+            margin: -1px 20.25rem 0 3.9000000000000004rem;
+            padding: 0.375rem 0.75rem;
+            text-align: left;
+            white-space: unset;
+            display: inline-block;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+        .faq .tab-content .card .card-header .btn-link:active,
+        .faq .tab-content .card .card-header .btn-link:focus,
+        .faq .tab-content .card .card-header .btn-link:hover {
+            text-decoration: none;
+        }
+
+        .faq .tab-content .card .card-body {
+            color: #7d7d7d;
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding-top: 0.75rem;
+        }
+
+        .faq .collapse-icon .card-header {
+            position: relative;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:after,
+        .faq .collapse-icon a[data-toggle="collapse"]:before {
+            position: absolute;
+            top: 40%;
+            right: 20px;
+            margin-top: -8px;
+            font-family: themify;
+            -webkit-transition: all 0.3s linear 0s;
+            -o-transition: all 0.3s linear 0s;
+            -moz-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+            font-size: clac(0.65rem);
+            background-image: -webkit-gradient(linear,
+                    left top,
+                    right top,
+                    from(#28bcfd),
+                    to(#1d78ff));
+            background-image: -webkit-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: -moz-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: -o-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: linear-gradient(90deg, #28bcfd, #1d78ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:after {
+            content: "\e648";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:before {
+            content: "\e64b";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon {
+            float: left;
+            margin-top: 1px;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:after,
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:before {
+            position: absolute;
+            top: 40%;
+            left: 20px;
+            margin-top: -8px;
+            font-family: themify;
+            font-size: 0.65rem;
+            -webkit-transition: all 0.3s linear 0s;
+            -o-transition: all 0.3s linear 0s;
+            -moz-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+            background-image: -webkit-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: -moz-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: -o-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-repeat: repeat-x;
+            border: 0;
+            color: #fff;
+            padding: 0.5rem 0.65rem;
+            border-radius: 1rem;
+            -webkit-box-shadow: 0 0 12px 0 #28bcfd;
+            box-shadow: 0 0 12px 0 #28bcfd;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:after {
+            content: "\e622";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:before {
+            content: "\e61a";
+        }
+
+        .faq .collapse-icon.left a {
+            padding-left: 28px;
+        }
+
+        .faq .collapse-icon.left a:after,
+        .faq .collapse-icon.left a:before {
+            left: 20px;
+            right: auto;
+        }
+
+        .faq .collapse-icon a[aria-expanded="true"] .icon:before,
+        .faq .collapse-icon a[aria-expanded="true"]:before,
+        .faq .collapse-icon a[aria-expanded="false"] .icon:after,
+        .faq .collapse-icon a[aria-expanded="false"]:after {
+            opacity: 0;
+        }
+
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="true"] .icon:before,
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="true"]:before {
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="false"] .icon:after,
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="false"]:after {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .fade {
+            -webkit-transition: opacity 0.15s linear;
+            -o-transition: opacity 0.15s linear;
+            -moz-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+        }
+
+        @media screen and (prefers-reduced-motion: reduce) {
+            .fade {
+                -webkit-transition: none;
+                -o-transition: none;
+                -moz-transition: none;
+                transition: none;
+            }
+        }
+
+        .fade:not(.show) {
+            opacity: 0;
+        }
+
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        .collapsing {
+            height: 0;
+            -webkit-transition: height 0.35s ease;
+            -o-transition: height 0.35s ease;
+            -moz-transition: height 0.35s ease;
+            transition: height 0.35s ease;
+        }
+
+        @media screen and (prefers-reduced-motion: reduce) {
+            .collapsing {
+                -webkit-transition: none;
+                -o-transition: none;
+                -moz-transition: none;
+                transition: none;
+            }
+        }
+    </style>
+    <!-- END Page Level CSS-->
+</head>
+
+<body id="top">
+    <!-- Main wrapper start -->
+    <div class="wrapper">
+        <!-- Header area start -->
+        <header id="header-area" class="header-area" data-spy="affix" data-offset-top="1">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="navbar-inner">
+                                <div class="logo">
+                                    <a href="#"><img src="img/HJ Logo.png" alt="" height="50" /></a>
+                                </div>
+                                <div class="main-menu-wrapper" id="navigation">
+                                    <ul class="nav navbar-nav navbar-right" id="main-menu">
+                                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="miscellaneous.html" class="active">Miscellaneous</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="expand-menu-open">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header area end -->
+        <!-- Slide menu start -->
+        <div class="mainmenu-expand">
+            <div class="close-menu">
+                <i class="ti-close"></i>
+            </div>
+            <div class="menu-logo">
+                <a href="index.html"><img src="img/HJ Logo.png" alt="" height="50"></a>
+            </div>
+            <nav class="navbar">
+                <div class="mainmenu-box" id="navigation-2">
+                    <ul class="nav navbar-nav" id="slide-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li class="active"><a href="miscellaneous.html">Miscellaneous</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-bookmark-area">
+                <p>Follow me on social media:</p>
+                <ul class="expand-social social-bookmark">
+                    <li>
+                        <a href="https://www.instagram.com/harshsenjaliya_/"><i class="ti-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://linkedin.com/in/harsh-senjaliya-56086b193"><i class="ti-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/harshsenaliya4433"><i class="ti-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=PCDh2pQAAAAJ&hl=en"><i class="ti-google"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="expand-copyright">Copyright @ 2022 <a href="#"></a></p>
+        </div>
+        <!-- Slide menu end -->
+        <!-- Content area start  -->
+        <div class="content">
+
+            <div class="blog-area white-bg pb-80" style="margin-top:180px;" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Miscellaneous</h1>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <article class="blog-post horizontal">
+                                <div class="blog-post-inner">
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img style="height: 500px; width: 80%;" class="img-responsive"
+                                                src="img/misc.jpg" alt=""></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-content-inner">
+                                            <h3><a href="#">Mitacs GRI 2022 Experience</a></h3>
+                                            <p style="text-align: justify!important;">Mitacs Global Research Internship Program is a competitive program that offers undergraduate students fully funded research internship opportunities in Canadian research institutes. I had the opportunity to collaborate with researchers and graduate students at Dalhousie University's <a href="https://aiesresearch.info/">AIES Lab</a>. During my time at the university, I experimented with non-destructive approaches to identify anomalies and nutritional deficiencies in potato plants. I also had the opportunity to visit and work at McCains <a href="https://www.mccain.com/sustainability/smart-sustainable-farming/">Farm of the Future (FOF)</a> in Florenceville-Bristol, where researchers and experts from across the world strive to improve and develop agricultural techniques that will revolutionize the potato industry. This 12-week research internship program, supervised by <a href="https://www.dal.ca/faculty/agriculture/engineering/faculty-staff/our-faculty/ahmad-almallahi.html">Dr.Ahmad Al-Mallahi</a>, has exposed me to the world of Precision Agriculture.<br>
+                                                <img style="height: 200px; width: 30%;display: inline-block;" class="img-responsive"
+                                                src="img/misc1.jpg" alt="">
+                                                <img style="height: 200px; width: 40%;display: inline-block" class="img-responsive"
+                                                src="img/misc2.jpg" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="post-footer">
+                                            <!-- <div class="read-more-btn">
+                                                <a href="#" class="">read more</a>
+                                            </div>
+                                            <ul class="post-social-share">
+                                                <li>
+                                                    <a href="#"><i class="ti-facebook"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="ti-twitter-alt"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="ti-pinterest"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                                </li>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer area start -->
+            <footer class="footer-area gray-bg pt-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="social-bookmark footer-social text-center">
+                                <ul>
+                                    <li>
+                                        <a href="https://scholar.google.com/citations?user=PCDh2pQAAAAJ&hl=en"><i
+                                                class="ti-google"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/harshsenjaliya_/"><i class="ti-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://linkedin.com/in/harsh-senjaliya-56086b193"><i class="ti-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:harsh.senjaliya.hs@gmail.com"><i class="ti-email"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/harshsenaliya4433"><i class="ti-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright text-center">
+                                <p>Copyright @ 2022 <a href="#"></a> All right reserved. Designed by <a href="#">Harsh
+                                        Senjaliya</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer area end -->
+        </div>
+        <!-- Content area end  -->
+    </div>
+    <!-- Main wrapper end -->
+    <!-- All JS file included here -->
+
+
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-mail.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="faq-assets/vendors/vendors.min.js"></script>
+    <!-- <script src="faq-assets/vendors/waypoints/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="faq-assets/js/theme.min.js"></script> -->
+    <!-- All FAQ JS file included here -->
+
+</body>
+
+
+
+
+</html>
