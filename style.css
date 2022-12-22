@@ -1386,7 +1386,8 @@ a.button.large {
 
 .header-social {
     bottom: 50px;
-    position: absolute;
+    margin-bottom: 20px;
+    /* position: absolute; */
     text-align: center;
     width: 100%;
     z-index: 1;
