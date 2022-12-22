@@ -20,13 +20,13 @@ $(function() {
                 url: $(form).attr('action'),
                 data: formData
             })
-            .done(function(response) {
+            .done(function(data) {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
 
                 // Set the message text.
-                $(formMessages).text(response);
+                $(formMessages).text('Successfully Submitted');
 
                 // Clear the form.
                 $('.input-box input, .message-box textarea').val('');
