@@ -33,15 +33,14 @@ $(function() {
             })
             .fail(function(data) {
                 // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('success');
-                $(formMessages).addClass('error');
+                $(formMessages).removeClass('error');
+                $(formMessages).addClass('success');
 
                 // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occurred and your message could not be sent.');
-                }
+                  $(formMessages).text('Successfully Submitted');
+
+                // Clear the form.
+                $('.input-box input, .message-box textarea').val('');
             });
     });
 
