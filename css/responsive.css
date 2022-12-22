@@ -164,6 +164,9 @@
     .container {
         width: 360px
     }
+   .img-responsive{
+        width:100%!important;
+    }
     /*Header style*/
     .header-area {
         padding-top: 30px;
