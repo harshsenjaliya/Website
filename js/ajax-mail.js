@@ -42,6 +42,7 @@ $(function() {
                 // Clear the form.
                 $('.input-box input, .message-box textarea').val('');
             });
+        
     });
 
 });
